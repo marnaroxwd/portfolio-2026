@@ -1,0 +1,9 @@
+@import 'utils/variables';
+@import 'base/reset';
+@import 'base/typography';
+
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
