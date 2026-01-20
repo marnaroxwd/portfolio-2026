@@ -52,6 +52,10 @@ table {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* === Import des polices Barlow === */
 /* Light */
 @font-face {
@@ -98,7 +102,7 @@ table {
 body {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.6;
 }
 
@@ -107,7 +111,71 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
+.accueil {
+  position: relative;
+  height: 84vh;
+  margin: 0 270px;
+}
+.accueil__img {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+.accueil__h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.accueil__description {
+  position: absolute;
+  max-width: 25%;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 32px;
+  margin: 40px 270px;
+  border: solid 1px #F6F5F0;
+  border-radius: 50px;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 12px 20px;
+}
+.nav__link {
+  color: #F6F5F0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 body {
   background-color: #282723;
   color: #F6F5F0;
+}
+
+h2 {
+  font-size: 52px;
+}
+
+.yellowpart {
+  color: #FFDB89;
+}
+
+.p__medium {
+  font-weight: 500;
 }/*# sourceMappingURL=styles.css.map */

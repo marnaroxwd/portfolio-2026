@@ -1,9 +1,20 @@
 @import 'utils/variables';
 @import 'base/reset';
 @import 'base/typography';
-
+@import 'layout/main';
+@import 'layout/accueil';
+@import'./nav';
 
 body {
   background-color: $background-color;
   color: $text-color;
+}
+h2{
+  font-size: $font-size-h2;
+}
+.yellowpart{
+  color: $primary-color;
+}
+.p__medium{
+  font-weight: $font-weight-medium;
 }

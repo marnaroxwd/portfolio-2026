@@ -1,0 +1,29 @@
+.accueil{
+    position:relative;
+    height: 84vh;
+    margin: 0 270px;
+    &__img{
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        transform: translateX(-50%);
+        width: 50%;
+    }
+    &__h2{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__description{
+        position: absolute;
+        max-width: 25%;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}

@@ -10,38 +10,39 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>MB.</li>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__el"><a class="nav__link" href="#accueil">M<span class="yellowpart">B</span>.</a></li>
             </ul>
-            <ul>
-                <li>À propos</li>
-                <li>Projets</li>
-                <li>Contact</li>
+            <ul class="nav__list">
+                <li class="nav__el"><a class="nav__link" href="#about">À propos</a></li>
+                <li class="nav__el"><a class="nav__link" href="#projects">Projets</a></li>
+                <li class="nav__el"><a class="nav__link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="accueil">
-            <h1>MAXIME BALDAN</h1>
-            <h2>WEB <span>DÉVELOPPEUR</span></h2>
-            <div>
-                <p>Web développeur et designer, guidé par la créativité et le sens.</p>
+        <section id="accueil" class="accueil">
+            <h1 class="accueil__h1">MAXIME BALDAN</h1>
+            <img class="accueil__img" src="assets/images/pfpAccueil.png" alt="">
+            <h2 class="accueil__h2">WEB <span class="yellowpart">DÉVELOPPEUR</span></h2>
+            <div class="accueil__description">
+                <p class="p__medium">Web développeur et designer, guidé par la créativité et le sens.</p>
                 <p>Chaque projet est pour moi une occasion d'expérimenter, de repousser mes limites et de créer des interfaces qui racontent une histoire et cherchent à marquer l'utilisateur.</p>
             </div>
         </section>
         <section id="about">
-            <h2>À <span>PROPOS</span></h2>
+            <h2>À <span class="yellowpart">PROPOS</span></h2>
             <div>
                 <p>Curieux de nature, j'adore lire, jouer et surtout apprendre. C'est cette curiosité qui m'a conduit au web, un univers où chaque jour apporte de nouvelles idées et défis.</p>
 
             </div>
         </section>
         <section id="projects">
-            <h2>MES <span>PROJETS</span></h2>
+            <h2>MES <span class="yellowpart">PROJETS</span></h2>
         </section>
         <section id="contact">
-            <h2>CONTACTEZ-<span>MOI</span></h2>
+            <h2>CONTACTEZ-<span class="yellowpart">MOI</span></h2>
         </section>
     </main>
     <footer>
