@@ -3,7 +3,7 @@
 @import 'base/typography';
 @import 'layout/main';
 @import 'layout/accueil';
-@import'./nav';
+@import'components/nav';
 
 body {
   background-color: $background-color;
