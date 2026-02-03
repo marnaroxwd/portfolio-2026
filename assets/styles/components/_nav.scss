@@ -1,61 +1,37 @@
 .nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 32px;
-    border: solid 1px $text-color;
-    border-radius: 50px;
-    position: absolute;
-    width: -webkit-fill-available;
-    @media (min-width: 1200px) {
-        margin: 40px 270px;
-    }
-    &__list{
+    font-family: $font-family-base;
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    border-bottom: solid 1px $color-text;
+    &__list
+    {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between  ;
-        margin: 12px 20px;
-        &--menu{
-            @media(max-width: 768px) {
-                position: absolute;
-                top: 0;
-                right: 0;
-                margin: 0;
-                height: 100vh;
-                flex-direction: column;
-                background: $background-color;
-                display: none;
-            }
-            @media (min-width: 769px){
-                gap: 80px;
-            }
-            &.is-open {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
+        padding: 20px;
+
+        &-container{
+        border-left: solid 1px $color-text;
+        border-right: solid 1px $color-text;
+        grid-column: 2/12;
+        display: flex;
+        justify-content: space-between;
     }
-        }
+    &--menu{
+        gap:40px
     }
+
+}
     &__link{
-        color: $text-color;
-        text-transform: uppercase;
-        font-weight: $font-weight-bold;
-        
+        color: $color-text;
     }
 }
 
-
-/* Burger */
-.burger {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    background-color: white;
-    z-index: 10;
-    @media(min-width: 769px) {
-        display: none;
+.burger{
+    display: none;
+    @media (max-width: 768px){
+        display: block;
     }
 }

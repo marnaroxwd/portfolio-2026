@@ -1,20 +1,24 @@
-// assets/styles/base/_typography.scss
+/* ============================= */
+/*        SPACE GROTESK          */
+/* ============================= */
 
-/* === Import des polices Barlow === */
-
-/* Light */
+/* Medium */
 @font-face {
-  font-family: 'Barlow';
-  src: url('../../fonts/Barlow-Light.woff2') format('woff2');
-  font-weight: 300;
+  font-family: 'Space Grotesk';
+  src: url('../fonts/SpaceGrotesk-Medium.woff2') format('woff2');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
+/* ============================= */
+/*        IBM PLEX MONO          */
+/* ============================= */
+
 /* Regular */
 @font-face {
-  font-family: 'Barlow';
-  src: url('../../fonts/Barlow-Regular.woff2') format('woff2');
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -22,8 +26,8 @@
 
 /* Medium */
 @font-face {
-  font-family: 'Barlow';
-  src: url('../../fonts/Barlow-Medium.woff2') format('woff2');
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -31,42 +35,58 @@
 
 /* SemiBold */
 @font-face {
-  font-family: 'Barlow';
-  src: url('../../fonts/Barlow-SemiBold.woff2') format('woff2');
+  font-family: 'IBM Plex Mono';
+  src: url('../../fonts/IBMPlexMono-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
-/* Bold */
-@font-face {
-  font-family: 'Barlow';
-  src: url('../../fonts/Barlow-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
+/* ============================= */
+/*   VARIABLES TYPOGRAPHIQUES    */
+/* ============================= */
 
-/* === Variables typographiques === */
-$font-family-base: 'Barlow', sans-serif;
-$font-weight-light: 300;
+$font-family-base: "IBM Plex Mono", monospace;
+$font-family-heading: "Space Grotesk", sans-serif;
+;
+
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
-$font-weight-bold: 700;
-$font-size-base: 20px;
-$font-size-h2: 52px;
-$line-height-base: 1.6;
 
-/* === Styles globaux === */
+$font-size-base: 20px;
+$font-size-h2: 51px;
+
+$line-height-base: 1.4;
+
+$color-text: #2D2D2A;
+
+/* ============================= */
+/*        STYLES GLOBAUX         */
+/* ============================= */
+
 body {
-  font-family: $font-family-base; 
+  font-family: $font-family-base;
   font-weight: $font-weight-regular;
   font-size: $font-size-base;
   line-height: $line-height-base;
+  color: $color-text;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: $font-weight-bold;
-  line-height: 1;
+/* ============================= */
+/*           TITRES              */
+/* ============================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-heading;
+  font-weight: $font-weight-medium;
+}
+
+h2 {
+  font-size: $font-size-h2;
 }

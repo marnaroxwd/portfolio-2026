@@ -15,51 +15,99 @@
     <header>
 <nav class="nav">
     <!-- Logo toujours visible -->
-    <ul class="nav__list nav__list--logo">
-        <li class="nav__el">
-            <a class="nav__link" href="#accueil">
-                M<span class="yellowpart">B</span>.
-            </a>
+     <ul class="nav__list-container">
+        <li>
+        <ul class="nav__list nav__list--logo">
+            <li class="nav__el">
+                <a class="nav__link" href="#accueil">
+                    MB.
+                </a>
+            </li>
+        </ul>
         </li>
-    </ul>
+
 
     <!-- Bouton burger (visible en mobile) -->
 
 
     <!-- Menu à masquer en mobile -->
+     <li>
     <ul class="nav__list nav__list--menu">
         <li class="nav__el"><a class="nav__link" href="#about">À propos</a></li>
-        <li class="nav__el"><a class="nav__link" href="#projects">Projets</a></li>
+        <li class="nav__el"><a class="nav__link" href="#projects">projects</a></li>
+        <li class="nav__el"><a class="nav__link" href="#photographie">Photographie</a></li>
         <li class="nav__el"><a class="nav__link" href="#contact">Contact</a></li>
     </ul>
+     </li>
+     <li class="burger">
     <button class="burger" aria-label="Menu" aria-expanded="false">
         menu
     </button>
+     </li>
+
+     </ul>
+    
 </nav>
 
     </header>
-    <main>
+    <main class="grid">
         <section id="accueil" class="accueil">
-            <h1 class="accueil__h1">MAXIME BALDAN</h1>
-            <img class="accueil__img" src="assets/images/pfpAccueil.png" alt="">
-            <h2 class="accueil__h2">WEB <span class="yellowpart">DÉVELOPPEUR</span></h2>
-            <div class="accueil__description">
-                <p class="p__medium">Web développeur et designer, guidé par la créativité et le sens.</p>
-                <p>Chaque projet est pour moi une occasion d'expérimenter, de repousser mes limites et de créer des interfaces qui racontent une histoire et cherchent à marquer l'utilisateur.</p>
+            <div class="accueil__title_container">
+                <h1 class="accueil__big-title">MAXIME BALDAN</h1>
             </div>
+         <h2 class="subtitle accueil__subtitle">Accueil</h2>
+         <div class="accueil__description">
+            <p class="medium">Web développeur et designer, j’aime être créatif et trouver du sens à chaque projet que je fais.</p>
+            <p>J’aime profiter de chaque réalisation pour me tester, expérimenter et repousser mes limites, afin de créer des interfaces qui racontent une histoire et marquent les utilisateurs.</p>
+         </div>
+         <div class="accueil__img">
+            
+         </div>
         </section>
-        <section id="about" class="about">
-            <h2>À <span class="yellowpart">PROPOS</span></h2>
-            <div>
-                <p>Curieux de nature, j'adore lire, jouer et surtout apprendre. C'est cette curiosité qui m'a conduit au web, un univers où chaque jour apporte de nouvelles idées et défis.</p>
-
-            </div>
+        <section id="projects" class="projects">
+            <h2 class="subtitle projects__subtitle">Projets</h2>
+            <ul class="projects__list">
+                 <li class="projects__el">
+                    <a class="projects__link" href="">
+                        <ul class="link__list">
+                            <li class="link__el projects__titre">La buche</li>
+                            <li class="link__el">Web app</li>
+                            <li class="link__el">Concept, design & développement</li>
+                            <li class="link__el">2026</li>
+                            <li class="link__el">Consulter</li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="projects__el">
+                    <a class="projects__link" href="">
+                        <ul class="link__list">
+                            <li class="link__el projects__titre">Checkpoint</li>
+                            <li class="link__el">Web app</li>
+                            <li class="link__el">Concept, design & développement</li>
+                            <li class="link__el">2025</li>
+                            <li class="link__el">Consulter</li>
+                        </ul>
+                    </a>
+                </li>
+                 <li class="projects__el">
+                    <a class="projects__link" href="">
+                        <ul class="link__list">
+                            <li class="link__el projects__titre">Music PLZ</li>
+                            <li class="link__el">Site web</li>
+                            <li class="link__el">Design & développement</li>
+                            <li class="link__el">2025</li>
+                            <li class="link__el">Consulter</li>
+                        </ul>
+                    </a>
+                </li>
+            
+            </ul>
         </section>
-        <section id="projects" class="projets">
-            <h2>MES <span class="yellowpart">PROJETS</span></h2>
+        <section>
+            <h2 class="subtitle">Photos</h2>
         </section>
         <section id="contact" class="contact">
-            <h2>CONTACTEZ-<span class="yellowpart">MOI</span></h2>
+            <h2 class="subtitle">Contact</h2>
         </section>
     </main>
     <footer>
