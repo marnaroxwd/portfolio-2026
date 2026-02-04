@@ -262,4 +262,30 @@ h2 {
 }
 .projects__list .link__el {
   padding: 32px 20px;
+}
+
+.footer {
+  background-color: #2D2D2A;
+  color: #F7F7F5;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  border-right: solid 1px #F7F7F5;
+}
+.footer__el {
+  margin-top: 4px;
+}
+.footer__el:first-child {
+  margin-top: 0;
+}
+.footer__el:nth-child(2) {
+  margin-top: 0;
+}
+.footer__el-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  margin-bottom: 12px;
 }/*# sourceMappingURL=styles.css.map */
