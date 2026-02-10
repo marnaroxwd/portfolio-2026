@@ -1,12 +1,34 @@
 .footer{
-    background-color: #2D2D2A;
-    color: #F7F7F5;
+    background-color: $text-color;
+    color: $background-color;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+
     &__list{
         display: flex;
         flex-direction: column;
         border-right: solid 1px $text-color;
+        &-first{
+            grid-column: 1/5;
+            border-right: solid 1px $background-color;
+            padding-top: 24px;
+            padding-left: 20px;
+        }
+        &-third{
+            padding-top: 24px;
+            padding-left: 20px;
+            grid-column: 9/13;
+            border-left: solid 1px $background-color;
+        }
+    }
+    &__group-list{
+        padding-top: 24px;
+        padding-left: 20px;
+        grid-column: 5/8;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-bottom: 40px;
     }
     &__el{
         margin-top: 4px;
@@ -20,7 +42,11 @@
             font-family: $font-family-heading;
             font-weight: $font-weight-medium;
             margin-bottom: 12px;
+            text-transform: uppercase;
         }
+    }
+    &__link{
+        color: $background-color;
     }
 
 }
