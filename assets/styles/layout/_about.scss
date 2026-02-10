@@ -1,0 +1,29 @@
+.about{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    border-bottom: solid 1px #2D2D2A;
+
+    &__subtitle{
+         grid-column: 1/2; 
+         grid-row: 1/3;
+    }
+    &__upper{
+        grid-column: 2/12;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        border-bottom: solid 1px #2D2D2A;
+        border-left: solid 1px #2D2D2A;
+        padding: 0 20px;
+    }
+    &__first-par{
+        grid-column: 1/6;
+        border-right: solid 1px #2D2D2A;
+        }
+    &__second-par{
+        grid-column: 7/12;
+    }
+}
