@@ -1,0 +1,79 @@
+.contact{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 112px);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    border-bottom: solid 1px $color-text;
+    &__subtitle{
+        grid-column: 1/1; 
+        grid-row: 1/4;
+    }
+    &__list{
+        grid-row: 1 / 5;
+        grid-column: 7/12;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 112px);
+
+    }
+    &__el{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px $text-color;
+        border-top: none;
+    }
+    &__link{
+        line-height: 1  ;
+    }
+    &__form{
+        grid-column: 2/7;
+        grid-row: 1/4;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 112px);
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        border-left: solid 1px $text-color;
+        border-right: solid 1px $text-color;
+    }
+}
+
+.t1{
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+.t2{
+    grid-column: 1/6;
+    grid-row: 2/3;
+}
+.t3{
+    grid-column: 1/6;
+    grid-row: 3/4;
+}
+.t4{
+    grid-column: 1/6;
+    grid-row: 4/5;
+}
+
+.form{
+
+    &__name{
+        grid-column: 1/6;
+        grid-row: 1;
+        padding-left: 20px;
+        border-bottom: solid 1px $text-color;
+    }
+    &__mail{
+        grid-column: 1/6;
+        grid-row: 2;
+        padding-left: 20px;
+        border-bottom: solid 1px $text-color;
+    }
+    &__description{
+        grid-column: 1/6;
+        grid-row: 3/4;
+        padding-left: 20px;
+    }
+}

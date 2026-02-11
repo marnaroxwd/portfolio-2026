@@ -109,7 +109,7 @@
                 <!-- Galerie de photos -->
 
             </div>
-            <a href="">Voir la gallerie</a>
+            <a class="body__link" href="">Voir la gallerie</a>
         </section>
         <section id="about" class="about">
             <h2 class="subtitle about__subtitle">À propos</h2>
@@ -129,7 +129,33 @@
             </div>
         </section>
         <section id="contact" class="contact">
-            <h2 class="subtitle">Contact</h2>
+            <h2 class="subtitle contact__subtitle">Contact</h2>
+
+            <form class="contact__form" action="#" method="post">
+                <div class="form__name">
+                    <label for="fullname">Nom complet :</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Maxime Baldan" required>  
+                </div>
+
+                <div class="form__mail">
+                    <label for="email">E-Mail :</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br> 
+                </div> 
+
+                <div class="form__description">
+                    <label for="description">Description de votre demande :</label><br>
+                    <textarea id="description" name="description" rows="5" required></textarea><br><br>
+                    
+                    <button type="submit">Envoyer</button>
+                </div>
+
+            </form>
+            <ul class="contact__list">
+                <li class="contact__el t1 "><a class="body__link contact__link" href="mailto:maxime.baldan@outlook.be">E-mail</a></li>
+                <li class="contact__el t2"><a class="body__link contact__link" target="_blank" href="https://github.com/marnaroxwd">Github</a></li>
+                <li class="contact__el t3 "><a class="body__link contact__link" target="_blank" href="https://www.instagram.com/marnarox.dwt/">Instagram</a></li>
+                <li class="contact__el t4"><a class="body__link contact__link" target="_blank" href="www.linkedin.com/in/maxime-baldan">Linkedin</a></li>
+            </ul>
         </section>
     </main>
     <footer class="footer">
