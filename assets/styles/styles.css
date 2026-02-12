@@ -200,6 +200,7 @@ h2 {
   grid-row: 2;
   border-left: solid 1px #2D2D2A;
   border-right: solid 1px #2D2D2A;
+  max-width: 100%;
 }
 .accueil__subtitle {
   grid-column: 1/1;
@@ -445,4 +446,8 @@ label {
   text-transform: uppercase;
   color: #2D2D2A;
   opacity: 50%;
+}
+
+img {
+  max-width: 100%;
 }/*# sourceMappingURL=styles.css.map */
