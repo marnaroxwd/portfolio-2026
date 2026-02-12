@@ -1,0 +1,46 @@
+.photos{
+        display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 320px);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    border-bottom: solid 1px $color-text;
+    padding-top: 32px;
+    &__first{
+        grid-column: 2/6;
+        grid-row: 1;
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/IMG_2338.jpg");
+        background-size: cover;      // Remplit tout
+        background-position: bottom center; // Centre l’image
+        background-repeat: no-repeat;
+    }
+    &__second{
+        grid-column: 6/8;
+        grid-row: 1;
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/IMG_2344.jpg");
+        background-size: cover;      // Remplit tout
+        background-position: bottom center; // Centre l’image
+        background-repeat: no-repeat;
+    }
+    &__third{
+        grid-column: 8/12;
+        grid-row: 1;
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/IMG_2400.jpg");
+        background-size: cover;      // Remplit tout
+        background-position: bottom center; // Centre l’image
+        background-repeat: no-repeat;
+    }
+    &__link{
+        border-top: solid 1px $text-color;
+        justify-content: center;
+        align-self: center;
+        grid-column: 1/13;
+        grid-row: 3;
+    }
+}

@@ -265,6 +265,53 @@ h2 {
   padding: 32px 20px;
 }
 
+.photos {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 320px);
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  border-bottom: solid 1px #2D2D2A;
+  padding-top: 32px;
+}
+.photos__first {
+  grid-column: 2/6;
+  grid-row: 1;
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/IMG_2338.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.photos__second {
+  grid-column: 6/8;
+  grid-row: 1;
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/IMG_2344.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.photos__third {
+  grid-column: 8/12;
+  grid-row: 1;
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/IMG_2400.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.photos__link {
+  border-top: solid 1px #2D2D2A;
+  justify-content: center;
+  align-self: center;
+  grid-column: 1/13;
+  grid-row: 3;
+}
+
 .about {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
