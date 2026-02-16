@@ -1,199 +1,266 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maxime Baldan</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maxime Baldan</title>
 
-    <link rel="stylesheet" href="assets/styles/styles.css">
-    <script src="assets/script/app.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
+		<link rel="stylesheet" href="assets/styles/styles.css" />
+		<script src="assets/script/app.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="nav">
+				<!-- Logo toujours visible -->
+				<ul class="nav__list-container">
+					<li>
+						<ul class="nav__list nav__list--logo">
+							<li class="nav__el">
+								<a class="nav__link" href="#accueil"> MB. </a>
+							</li>
+						</ul>
+					</li>
 
-</head>
-<body>
-    
-    <header>
-<nav class="nav">
-    <!-- Logo toujours visible -->
-     <ul class="nav__list-container">
-        <li>
-        <ul class="nav__list nav__list--logo">
-            <li class="nav__el">
-                <a class="nav__link" href="#accueil">
-                    MB.
-                </a>
-            </li>
-        </ul>
-        </li>
+					<!-- Bouton burger (visible en mobile) -->
 
-
-    <!-- Bouton burger (visible en mobile) -->
-
-
-    <!-- Menu à masquer en mobile -->
-     <li>
-    <ul class="nav__list nav__list--menu">
-        <li class="nav__el"><a class="nav__link" href="#about">À propos</a></li>
-        <li class="nav__el"><a class="nav__link" href="#projects">projects</a></li>
-        <li class="nav__el"><a class="nav__link" href="#photographie">Photographie</a></li>
-        <li class="nav__el"><a class="nav__link" href="#contact">Contact</a></li>
-    </ul>
-     </li>
-     <li class="burger">
-    <button class="burger" aria-label="Menu" aria-expanded="false">
-        menu
-    </button>
-     </li>
-
-     </ul>
-    
-</nav>
-
-    </header>
-    <main class="grid">
-        <section id="accueil" class="accueil">
-            <div class="accueil__title_container">
-                <h1 class="accueil__big-title">MAXIME BALDAN</h1>
-            </div>
-         <h2 class="subtitle accueil__subtitle">Accueil</h2>
-         <div class="accueil__description">
-            <p class="medium">Web développeur et designer, j’aime être créatif et trouver du sens à chaque projet que je fais.</p>
-            <p>J’aime profiter de chaque réalisation pour me tester, expérimenter et repousser mes limites, afin de créer des interfaces qui racontent une histoire et marquent les utilisateurs.</p>
-         </div>
-            <img class="accueil__img" src="assets/images/IMG_2309.jpg" alt="">
-        </section>
-        <section id="projects" class="projects">
-            <h2 class="subtitle projects__subtitle">Projets</h2>
-            <ul class="projects__list">
-                 <li class="projects__el">
-                    <a class="projects__link" href="">
-                        <ul class="link__list">
-                            <li class="link__el projects__titre">La buche</li>
-                            <li class="link__el">Web app</li>
-                            <li class="link__el">Concept, design & développement</li>
-                            <li class="link__el">2026</li>
-                            <li class="link__el">Consulter</li>
-                        </ul>
-                    </a>
-                </li>
-                <li class="projects__el">
-                    <a class="projects__link" href="">
-                        <ul class="link__list">
-                            <li class="link__el projects__titre">Checkpoint</li>
-                            <li class="link__el">Web app</li>
-                            <li class="link__el">Concept, design & développement</li>
-                            <li class="link__el">2025</li>
-                            <li class="link__el">Consulter</li>
-                        </ul>
-                    </a>
-                </li>
-                 <li class="projects__el">
-                    <a class="projects__link" href="">
-                        <ul class="link__list">
-                            <li class="link__el projects__titre">Music PLZ</li>
-                            <li class="link__el">Site web</li>
-                            <li class="link__el">Design & développement</li>
-                            <li class="link__el">2025</li>
-                            <li class="link__el">Consulter</li>
-                        </ul>
-                    </a>
-                </li>
-            
-            </ul>
-        </section>
-        <section class="photos">
-            <h2 class="subtitle">Photos</h2>
-            <div class="photos__first"></div>
-            <div class="photos__second"></div>
-            <div class="photos__third"></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            
-                   <img class="photos__fourth" src="" alt="">
-                   <img class="photos__fifth" src="" alt="">
-                   <img class="photos__sixth" src="" alt="">
-                </ul>
-            <a class="body__link photos__link" href="">Voir la gallerie</a>
-        </section>
-        <section id="about" class="about">
-            <h2 class="subtitle about__subtitle">À propos</h2>
-            <div class="about__upper">
-                <div class="about__first-par">
-                    <p>Curieux de nature, j’aime lire, jouer et apprendre, peu importe le domaine. J’y vois un moyen de nourrir ma curiosité et de rester pertinent dans ce que je crée.</p>
-                </div>
-                <div class="about__first-img">
-    
-                </div>
-            </div>
-            <div>
-
-            </div>
-            <div class="about__second-par">
-                <p>Je me forme continuellement au développement web et au design.En parallèle, j’explore d’autres domaines comme la 3D et la photographie, afin de proposer des projets web de plus en plus riches et unique.</p>
-            </div>
-        </section>
-        <section id="contact" class="contact">
-            <h2 class="subtitle contact__subtitle">Contact</h2>
-
-            <form class="contact__form" action="#" method="post">
-                <div class="form__name">
-                    <label for="fullname">Nom complet :</label><br>
-                    <input type="text" id="fullname" name="fullname" placeholder="Maxime Baldan" required>  
-                </div>
-
-                <div class="form__mail">
-                    <label for="email">E-Mail :</label><br>
-                    <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br> 
-                </div> 
-
-                <div class="form__description">
-                    <label for="description">Description de votre demande :</label><br>
-                    <textarea id="description" name="description" rows="5" required></textarea><br><br>
-                    
-                    <button type="submit">Envoyer</button>
-                </div>
-
-            </form>
-            <ul class="contact__list">
-                <li class="contact__el t1 "><a class="body__link contact__link" href="mailto:maxime.baldan@outlook.be">E-mail</a></li>
-                <li class="contact__el t2"><a class="body__link contact__link" target="_blank" href="https://github.com/marnaroxwd">Github</a></li>
-                <li class="contact__el t3 "><a class="body__link contact__link" target="_blank" href="https://www.instagram.com/marnarox.dwt/">Instagram</a></li>
-                <li class="contact__el t4"><a class="body__link contact__link" target="_blank" href="www.linkedin.com/in/maxime-baldan">Linkedin</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer class="footer">
-        <ul class="footer__list footer__list-first">
-            <li class="footer__el footer__el-title">Navigation</li>
-            <li class="footer__el">Accueil</li>
-            <li class="footer__el">Projets</li>
-            <li class="footer__el">Photos</li>
-            <li class="footer__el">À propos</li>
-            <li class="footer__el">Contact</li>
-        </ul>
-        <div class="footer__group-list">
-            <ul class="footer__list ">
-                <li class="footer__el footer__el-title">Services</li>
-                <li class="footer__el">Design Web</li>
-                <li class="footer__el">Développement Web</li>
-                <li class="footer__el">UI / UX</li>
-                <li class="footer__el">Photographie</li>
-            </ul>
-            <ul class="footer__list">
-                <li class="footer__el footer__el-title">Légal</li>
-                <li class="footer__el">Mentions légales</li>
-                <li class="footer__el">Politique de confidentialité</li>
-            </ul>
+					<!-- Menu à masquer en mobile -->
+					<li>
+						<ul class="nav__list nav__list--menu">
+							<li class="nav__el">
+								<a class="nav__link" href="#about">À propos</a>
+							</li>
+							<li class="nav__el">
+								<a class="nav__link" href="#projects">projects</a>
+							</li>
+							<li class="nav__el">
+								<a class="nav__link" href="#photographie">Photographie</a>
+							</li>
+							<li class="nav__el">
+								<a class="nav__link" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</li>
+					<li class="burger">
+						<button class="burger" aria-label="Menu" aria-expanded="false">
+							menu
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="grid">
+			<section id="accueil" class="accueil">
+				<div class="accueil__title_container">
+					<h1 class="accueil__big-title">MAXIME BALDAN</h1>
+				</div>
+				<h2 class="subtitle accueil__subtitle">Accueil</h2>
+				<div class="accueil__description">
+					<p class="medium">
+						Web développeur et designer, j’aime être créatif et trouver du sens
+						à chaque projet que je fais.
+					</p>
+					<p>
+						J’aime profiter de chaque réalisation pour me tester, expérimenter
+						et repousser mes limites, afin de créer des interfaces qui racontent
+						une histoire et marquent les utilisateurs.
+					</p>
+				</div>
+				<div class="accueil__img"></div>
+			</section>
+			<section id="projects" class="projects">
+				<h2 class="subtitle projects__subtitle">Projets</h2>
+				<ul class="projects__list">
+					<li class="projects__el">
+						<a class="projects__link" href="">
+							<ul class="link__list">
+								<li class="link__el projects__titre">La buche</li>
+								<li class="link__el">Web app</li>
+								<li class="link__el">Concept, design & développement</li>
+								<li class="link__el">2026</li>
+								<li class="link__el">Consulter</li>
+							</ul>
+						</a>
+					</li>
+					<li class="projects__el">
+						<a class="projects__link" href="">
+							<ul class="link__list">
+								<li class="link__el projects__titre">Checkpoint</li>
+								<li class="link__el">Web app</li>
+								<li class="link__el">Concept, design & développement</li>
+								<li class="link__el">2025</li>
+								<li class="link__el">Consulter</li>
+							</ul>
+						</a>
+					</li>
+					<li class="projects__el">
+						<a class="projects__link" href="">
+							<ul class="link__list">
+								<li class="link__el projects__titre">Music PLZ</li>
+								<li class="link__el">Site web</li>
+								<li class="link__el">Design & développement</li>
+								<li class="link__el">2025</li>
+								<li class="link__el">Consulter</li>
+							</ul>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section class="photos">
+				<h2 class="subtitle photos__subtitle">Photos</h2>
+				<div class="photos__grid">
+					<div class="photos__layout photos__top photos__first"></div>
+					<div class="photos__layout photos__top photos__second"></div>
+					<div class="photos__layout photos__top photos__third"></div>
+					<div class="photos__layout photos__bottom photos__fourth"></div>
+					<div class="photos__layout photos__bottom photos__fifth"></div>
+					<div class="photos__layout photos__bottom photos__sixth"></div>
+				</div>
+				<a class="body__link photos__link" href="">Voir la gallerie</a>
+			</section>
+<section id="about" class="about">
+    <h2 class="subtitle about__subtitle">À propos</h2>
+    <div class="about__grid">
+        <div class="about__first-par">
+            <p>
+                Curieux de nature, j'aime lire, jouer et apprendre, peu importe le
+                domaine. J'y vois un moyen de nourrir ma curiosité et de rester
+                pertinent dans ce que je crée.
+            </p>
         </div>
+        <div class="about__img about__img-first"></div>
+        <div class="about__img about__img-second"></div>
+        <div class="about__second-par">
+            <p>
+                Je me forme continuellement au développement web et au design. En
+                parallèle, j'explore d'autres domaines comme la 3D et la
+                photographie, afin de proposer des projets web de plus en plus
+                riches et unique.
+            </p>
+        </div>
+    </div>
+</section>
+			<section id="contact" class="contact">
+				<h2 class="subtitle contact__subtitle">Contact</h2>
 
-        <ul class="footer__list footer__list-third">
-            <li class="footer__el footer__el-title">Réseaux</li>
-            <li class="footer__el"><a class="footer__link" href="https://github.com/marnaroxwd">Github</a></li>
-            <li class="footer__el"><a class="footer__link" href="www.linkedin.com/in/maxime-baldan-8a65b536b">Linkedin</a></li>
-            <li class="footer__el">Instagram</li>
-            <li class="footer__el"><a class="footer__link" href="mailto:maxime.baldan@outlook.be">maxime.baldan@outlook.be</a></li>
-        </ul>
-    </footer>
-</body>
+				<form class="contact__form" action="#" method="post">
+					<div class="form__name">
+						<label for="fullname">Nom complet :</label><br />
+						<input
+							type="text"
+							id="fullname"
+							name="fullname"
+							placeholder="Maxime Baldan"
+							required
+						/>
+					</div>
+
+					<div class="form__mail">
+						<label for="email">E-Mail :</label><br />
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="example@email.com"
+							required
+						/><br /><br />
+					</div>
+
+					<div class="form__description">
+						<label for="description">Description de votre demande :</label
+						><br />
+						<textarea
+							id="description"
+							name="description"
+							rows="5"
+							required
+						></textarea
+						><br /><br />
+
+						<button type="submit">Envoyer</button>
+					</div>
+				</form>
+				<ul class="contact__list">
+					<li class="contact__el t1">
+						<a
+							class="body__link contact__link"
+							href="mailto:maxime.baldan@outlook.be"
+							>E-mail</a
+						>
+					</li>
+					<li class="contact__el t2">
+						<a
+							class="body__link contact__link"
+							target="_blank"
+							href="https://github.com/marnaroxwd"
+							>Github</a
+						>
+					</li>
+					<li class="contact__el t3">
+						<a
+							class="body__link contact__link"
+							target="_blank"
+							href="https://www.instagram.com/marnarox.dwt/"
+							>Instagram</a
+						>
+					</li>
+					<li class="contact__el t4">
+						<a
+							class="body__link contact__link"
+							target="_blank"
+							href="www.linkedin.com/in/maxime-baldan"
+							>Linkedin</a
+						>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer class="footer">
+			<ul class="footer__list footer__list-first">
+				<li class="footer__el footer__el-title">Navigation</li>
+				<li class="footer__el">Accueil</li>
+				<li class="footer__el">Projets</li>
+				<li class="footer__el">Photos</li>
+				<li class="footer__el">À propos</li>
+				<li class="footer__el">Contact</li>
+			</ul>
+			<div class="footer__group-list">
+				<ul class="footer__list">
+					<li class="footer__el footer__el-title">Services</li>
+					<li class="footer__el">Design Web</li>
+					<li class="footer__el">Développement Web</li>
+					<li class="footer__el">UI / UX</li>
+					<li class="footer__el">Photographie</li>
+				</ul>
+				<ul class="footer__list">
+					<li class="footer__el footer__el-title">Légal</li>
+					<li class="footer__el">Mentions légales</li>
+					<li class="footer__el">Politique de confidentialité</li>
+					<li><a class="footer__link" href="credits.html">Crédits/sources</a></li>
+				</ul>
+			</div>
+
+			<ul class="footer__list footer__list-third">
+				<li class="footer__el footer__el-title">Réseaux</li>
+				<li class="footer__el">
+					<a class="footer__link" href="https://github.com/marnaroxwd"
+						>Github</a
+					>
+				</li>
+				<li class="footer__el">
+					<a
+						class="footer__link"
+						href="www.linkedin.com/in/maxime-baldan-8a65b536b"
+						>Linkedin</a
+					>
+				</li>
+				<li class="footer__el">Instagram</li>
+				<li class="footer__el">
+					<a class="footer__link" href="mailto:maxime.baldan@outlook.be"
+						>maxime.baldan@outlook.be</a
+					>
+				</li>
+			</ul>
+		</footer>
+	</body>
 </html>

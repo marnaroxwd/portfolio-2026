@@ -1,46 +1,79 @@
-.photos{
-        display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 320px);
-    grid-column-gap: 20px;
-    grid-row-gap: 0px;
+.photos {
+    display: grid;
+    grid-template-columns:  repeat(12, 1fr);
     border-bottom: solid 1px $color-text;
-    padding-top: 32px;
-    &__first{
-        grid-column: 2/6;
-        grid-row: 1;
-        height: 100%;
-        width: 100%;
-        background-image: url("../images/IMG_2338.jpg");
-        background-size: cover;      // Remplit tout
-        background-position: bottom center; // Centre l’image
-        background-repeat: no-repeat;
-    }
-    &__second{
-        grid-column: 6/8;
-        grid-row: 1;
-        height: 100%;
-        width: 100%;
-        background-image: url("../images/IMG_2344.jpg");
-        background-size: cover;      // Remplit tout
-        background-position: bottom center; // Centre l’image
-        background-repeat: no-repeat;
-    }
-    &__third{
-        grid-column: 8/12;
-        grid-row: 1;
-        height: 100%;
-        width: 100%;
-        background-image: url("../images/IMG_2400.jpg");
-        background-size: cover;      // Remplit tout
-        background-position: bottom center; // Centre l’image
-        background-repeat: no-repeat;
-    }
-    &__link{
-        border-top: solid 1px $text-color;
+    column-gap: 20px;
+    
+    &__subtitle {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        border-right: solid 1px $color-text;
+        display: flex;
+        align-items: center;
         justify-content: center;
-        align-self: center;
-        grid-column: 1/13;
-        grid-row: 3;
+    }
+    
+    &__grid {
+        
+        display: grid;
+        grid-column: 2/12;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(2, 320px);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 32px 20px 20px 20px;
+        border-left: solid 1px $color-text;
+        border-right: solid 1px $color-text;
+    }
+    	&__layout {
+		height: 100%;
+		width: 100%;
+		background-size: cover; // Remplit tout
+		background-position: bottom center; // Centre l’image
+		background-repeat: no-repeat;
+	}
+	&__top {
+		grid-row: 1;
+	}
+	&__bottom {
+		grid-row: 2;
+	}
+    &__first {
+        grid-column: 1/5;
+        background-image: url('../images/IMG_2338.jpg');
+    }
+    
+    &__second {
+        grid-column: 5/7;
+        background-image: url('../images/IMG_2344.jpg');
+    }
+    
+    &__third {
+        grid-column: 7/12;
+        background-image: url('../images/IMG_2408.jpg');
+    }
+    
+    &__fourth {
+        grid-column: 1/5;
+        background-image: url('../images/14022026-IMG_2615.jpg');
+    }
+    
+    &__fifth {
+        grid-column: 5/7;
+        background-image: url('../images/14022026-IMG_2493-2.jpg');
+    }
+    
+    &__sixth {
+        grid-column: 7/12;
+        background-image: url('../images/14022026-IMG_2631.jpg');
+    }
+    
+    &__link {
+        grid-column: 1 / -1;
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        border-top: solid 1px $color-text;
+        margin-top: 0;
     }
 }

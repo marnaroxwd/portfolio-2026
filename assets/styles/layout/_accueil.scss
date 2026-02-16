@@ -31,7 +31,10 @@
         padding: 32px 20px
     };
     &__img{
-        background-color: grey;
+        background-image: url('../images/accueil_mb.jpg');
+        background-size: cover;      // Remplit tout
+        background-position: bottom center; // Centre l’image
+        background-repeat: no-repeat;
         grid-column: 7/12;
         grid-row: 2;
         border-left: solid 1px $color-text;
