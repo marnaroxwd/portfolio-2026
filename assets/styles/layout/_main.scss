@@ -1,19 +1,32 @@
-.body__link{
-    font-family: $font-family-heading;
-    font-weight: $font-weight-medium;
-    font-size: 86px;
-    color: $text-color;
-    text-transform: uppercase;
+.body__link {
+	font-family: $font-family-heading;
+	font-weight: $font-weight-medium;
+	font-size: 86px;
+	color: $text-color;
+	text-transform: uppercase;
 }
-label{
-    font-family: $font-family-heading;
-    font-weight: $font-weight-medium;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: $color-text;
-    opacity: 50%;
+label {
+	font-family: $font-family-heading;
+	font-weight: $font-weight-medium;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: $color-text;
+	opacity: 50%;
+}
+img {
+	max-width: 100%;
+}
 
-}
-img{
-    max-width: 100%;
+.subtitle {
+	font-family: $font-family-heading;
+	font-weight: 500;
+	align-items: center;
+	text-transform: uppercase;
+    @media(min-width: 600px){
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }

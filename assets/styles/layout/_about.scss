@@ -7,8 +7,6 @@
 	&__subtitle {
 		grid-column: 1 / 2;
 		grid-row: 1 / 3;
-		writing-mode: vertical-lr;
-		transform: rotate(180deg);
 		display: flex;
 		align-items: center;
 		justify-content: center;

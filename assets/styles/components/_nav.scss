@@ -1,37 +1,191 @@
-.nav{
-    font-family: $font-family-base;
-    
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 0px;
-    border-bottom: solid 1px $text-color;
-    &__list
-    {
-        display: flex;
-        padding: 20px;
+.nav {
+	font-family: $font-family-base;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 0px;
+	border-bottom: solid 1px $text-color;
+	position: sticky;
+	top: 0;
+	background-color: #f5f5f0;
+	z-index: 1000;
 
-        &-container{
-        border-left: solid 1px $text-color;
-        border-right: solid 1px $text-color;
-        grid-column: 2/12;
-        display: flex;
-        justify-content: space-between;
+	@media (max-width: 767px) {
+		grid-template-columns: repeat(5, 1fr);
+		grid-column-gap: 0;
+	}
+    &__burger-li{
+        @media(min-width: 767px){
+            display: none;
+        }
     }
-    &--menu{
-        gap:40px
-    }
+	&__list {
+		display: flex;
+		padding: 20px;
+		list-style: none;
+		margin: 0;
+        @media(min-width: 768px){
+            justify-content: space-between;
+        }
+		&-container {
+			border-left: solid 1px $text-color;
+			border-right: solid 1px $text-color;
+			grid-column: 2/12;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			list-style: none;
+			margin: 0;
+			padding: 0;
 
+			@media (max-width: 767px) {
+				grid-column: 1/6;
+				border-left: none;
+				border-right: none;
+			}
+		}
+
+		&--logo {
+			padding: 20px;
+		}
+
+		&--menu {
+			gap: 40px;
+			list-style: none;
+			margin: 0;
+
+			@media (max-width: 767px) {
+				position: fixed;
+				top: 61px;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: #f5f5f0;
+				flex-direction: column;
+				gap: 0;
+				padding: 0;
+				transform: translateX(100%);
+				transition: transform 0.3s ease;
+				overflow-y: auto;
+
+				&.is-open {
+					transform: translateX(0);
+				}
+			}
+		}
+	}
+
+	&__el {
+		list-style: none;
+
+		@media (max-width: 767px) {
+			.nav__list--menu & {
+				position: relative;
+
+				&::after {
+					content: '';
+					position: absolute;
+					bottom: -1px;
+					right: 0;
+					width: 0;
+					height: 1px;
+					background-color: $text-color;
+					transition: width 0.4s ease;
+				}
+			}
+
+			// Animation en cascade quand le menu s'ouvre
+			.nav__list--menu.is-open & {
+				// Animation de la bordure
+				&::after {
+					width: 100%;
+				}
+
+				// Animation du lien
+				.nav__link {
+					opacity: 1;
+					transform: translateX(0);
+				}
+
+				// Délais en cascade
+				&:nth-child(1) {
+					&::after {
+						transition-delay: 0.2s;
+					}
+					.nav__link {
+						transition-delay: 0.2s;
+					}
+				}
+				&:nth-child(2) {
+					&::after {
+						transition-delay: 0.4s;
+					}
+					.nav__link {
+						transition-delay: 0.4s;
+					}
+				}
+				&:nth-child(3) {
+					&::after {
+						transition-delay: 0.6s;
+					}
+					.nav__link {
+						transition-delay: 0.6s;
+					}
+				}
+				&:nth-child(4) {
+					&::after {
+						transition-delay: 0.8s;
+					}
+					.nav__link {
+						transition-delay: 0.8s;
+					}
+				}
+			}
+		}
+	}
+
+	&__link {
+		color: $text-color;
+		text-decoration: none;
+		font-family: $font-family-heading;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 14px;
+		transition: opacity 0.2s ease;
+
+		&:hover {
+			opacity: 0.6;
+		}
+
+		@media (max-width: 767px) {
+			.nav__list--menu & {
+				display: block;
+				padding: 24px 20px;
+				font-size: 18px;
+				opacity: 0;
+				transform: translateX(30px);
+				transition: opacity 0.4s ease, transform 0.4s ease;
+			}
+		}
+	}
 }
-    &__link{
-        color: $text-color;
-    }
-}
 
-.burger{
-    display: none;
-    @media (max-width: 768px){
-        display: block;
-    }
+.burger {
+	display: none;
+	background: none;
+	border: none;
+	padding: 20px 24px;
+	cursor: pointer;
+	font-family: $font-family-heading;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+	color: $text-color;
+
+	@media (max-width: 767px) {
+		display: block;
+	}
 }

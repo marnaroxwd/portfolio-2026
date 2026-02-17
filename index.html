@@ -12,47 +12,47 @@
 	<body>
 		<header>
 			<nav class="nav">
-				<!-- Logo toujours visible -->
-				<ul class="nav__list-container">
-					<li>
-						<ul class="nav__list nav__list--logo">
-							<li class="nav__el">
-								<a class="nav__link" href="#accueil"> MB. </a>
-							</li>
-						</ul>
-					</li>
+	<ul class="nav__list-container">
+		<li>
+			<ul class="nav__list nav__list--logo">
+				<li class="nav__el">
+					<a class="nav__link" href="#accueil"> MB. </a>
+				</li>
+			</ul>
+		</li>
 
-					<!-- Bouton burger (visible en mobile) -->
+		<li>
+			<ul class="nav__list nav__list--menu">
+				<li class="nav__el">
+					<a class="nav__link" href="#about">À propos</a>
+				</li>
+				<li class="nav__el">
+					<a class="nav__link" href="#projects">Projets</a>
+				</li>
+				<li class="nav__el">
+					<a class="nav__link" href="#photographie">Photographie</a>
+				</li>
+				<li class="nav__el">
+					<a class="nav__link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</li>
+		<li class="nav__burger-li">
 
-					<!-- Menu à masquer en mobile -->
-					<li>
-						<ul class="nav__list nav__list--menu">
-							<li class="nav__el">
-								<a class="nav__link" href="#about">À propos</a>
-							</li>
-							<li class="nav__el">
-								<a class="nav__link" href="#projects">Projets</a>
-							</li>
-							<li class="nav__el">
-								<a class="nav__link" href="#photographie">Photographie</a>
-							</li>
-							<li class="nav__el">
-								<a class="nav__link" href="#contact">Contact</a>
-							</li>
-						</ul>
-					</li>
-					<li class="burger">
-						<button class="burger" aria-label="Menu" aria-expanded="false">
-							menu
-						</button>
-					</li>
-				</ul>
-			</nav>
+			<button class="burger" aria-label="Menu" aria-expanded="false">
+				menu
+			</button>
+		</li>
+	</ul>
+</nav>
 		</header>
-		<main class="grid">
+		<main>
 			<section id="accueil" class="accueil">
 				<div class="accueil__title_container">
-					<h1 class="accueil__big-title">MAXIME BALDAN</h1>
+					<h1 class="accueil__big-title">
+						<img src="assets/images/MAXIME_BALDAN.svg" alt="">
+						<span class="visually-hidden">Maxime Baldan</span>
+					</h1>
 				</div>
 				<h2 class="subtitle accueil__subtitle">Accueil</h2>
 				<div class="accueil__description">
@@ -68,7 +68,7 @@
 				</div>
 				<div class="accueil__img"></div>
 			</section>
-			<section id="projects" class="projects">
+			<!-- <section id="projects" class="projects">
 				<h2 class="subtitle projects__subtitle">Projets</h2>
 				<ul class="projects__list">
 					<li class="projects__el">
@@ -118,28 +118,28 @@
 				</div>
 				<a class="body__link photos__link" href="">Voir la gallerie</a>
 			</section>
-<section id="about" class="about">
-    <h2 class="subtitle about__subtitle">À propos</h2>
-    <div class="about__grid">
-        <div class="about__first-par">
-            <p>
-                Curieux de nature, j'aime lire, jouer et apprendre, peu importe le
-                domaine. J'y vois un moyen de nourrir ma curiosité et de rester
-                pertinent dans ce que je crée.
-            </p>
-        </div>
-        <div class="about__img about__img-first"></div>
-        <div class="about__img about__img-second"></div>
-        <div class="about__second-par">
-            <p>
-                Je me forme continuellement au développement web et au design. En
-                parallèle, j'explore d'autres domaines comme la 3D et la
-                photographie, afin de proposer des projets web de plus en plus
-                riches et unique.
-            </p>
-        </div>
-    </div>
-</section>
+			<section id="about" class="about">
+				<h2 class="subtitle about__subtitle">À propos</h2>
+				<div class="about__grid">
+					<div class="about__first-par">
+						<p>
+							Curieux de nature, j'aime lire, jouer et apprendre, peu importe le
+							domaine. J'y vois un moyen de nourrir ma curiosité et de rester
+							pertinent dans ce que je crée.
+						</p>
+					</div>
+					<div class="about__img about__img-first"></div>
+					<div class="about__img about__img-second"></div>
+					<div class="about__second-par">
+						<p>
+							Je me forme continuellement au développement web et au design. En
+							parallèle, j'explore d'autres domaines comme la 3D et la
+							photographie, afin de proposer des projets web de plus en plus
+							riches et unique.
+						</p>
+					</div>
+				</div>
+			</section>
 			<section id="contact" class="contact">
 				<h2 class="subtitle contact__subtitle">Contact</h2>
 
@@ -236,7 +236,9 @@
 					<li class="footer__el footer__el-title">Légal</li>
 					<li class="footer__el">Mentions légales</li>
 					<li class="footer__el">Politique de confidentialité</li>
-					<li><a class="footer__link" href="credits.html">Crédits/sources</a></li>
+					<li>
+						<a class="footer__link" href="credits.html">Crédits/sources</a>
+					</li>
 				</ul>
 			</div>
 
@@ -261,6 +263,6 @@
 					>
 				</li>
 			</ul>
-		</footer>
+		</footer> -->
 	</body>
 </html>

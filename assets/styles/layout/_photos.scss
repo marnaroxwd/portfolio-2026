@@ -5,8 +5,6 @@
     column-gap: 20px;
     
     &__subtitle {
-        writing-mode: vertical-rl;
-        transform: rotate(180deg);
         border-right: solid 1px $color-text;
         display: flex;
         align-items: center;
