@@ -1,9 +1,12 @@
 .body__link {
 	font-family: $font-family-heading;
 	font-weight: $font-weight-medium;
-	font-size: 86px;
-	color: $text-color;
+	font-size: $font-size-big-links;
+	color: $color-text;
 	text-transform: uppercase;
+	@media (max-width: 768px) {
+	  font-size: $font-size-mobile-big-links;
+	}
 }
 label {
 	font-family: $font-family-heading;
@@ -29,4 +32,21 @@ img {
         display: flex;
         flex-direction: column-reverse;
     }
+}
+body{
+	background-color: $color-background;
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+}
+
+textarea{
+	width: calc(100% - 20px);
+	    resize: none;
+    transition: height 0.2s ease;
 }

@@ -1,3 +1,7 @@
+// ================================================
+// nav.scss
+// ================================================
+
 .nav {
 	font-family: $font-family-base;
 	display: grid;
@@ -5,32 +9,36 @@
 	grid-template-rows: 1fr;
 	grid-column-gap: 20px;
 	grid-row-gap: 0px;
-	border-bottom: solid 1px $text-color;
+	border-bottom: solid 1px $color-text;
+	background-color: $color-background;
 	position: sticky;
 	top: 0;
-	background-color: #f5f5f0;
 	z-index: 1000;
 
 	@media (max-width: 767px) {
 		grid-template-columns: repeat(5, 1fr);
 		grid-column-gap: 0;
 	}
-    &__burger-li{
-        @media(min-width: 767px){
-            display: none;
-        }
-    }
+
+	&__burger-li {
+		@media (min-width: 768px) {
+			display: none;
+		}
+	}
+
 	&__list {
 		display: flex;
 		padding: 20px;
 		list-style: none;
 		margin: 0;
-        @media(min-width: 768px){
-            justify-content: space-between;
-        }
+
+		@media (min-width: 768px) {
+			justify-content: space-between;
+		}
+
 		&-container {
-			border-left: solid 1px $text-color;
-			border-right: solid 1px $text-color;
+			border-left: solid 1px $color-text;
+			border-right: solid 1px $color-text;
 			grid-column: 2/12;
 			display: flex;
 			justify-content: space-between;
@@ -61,7 +69,7 @@
 				left: 0;
 				right: 0;
 				bottom: 0;
-				background-color: #f5f5f0;
+				background-color: $color-background;
 				flex-direction: column;
 				gap: 0;
 				padding: 0;
@@ -90,74 +98,51 @@
 					right: 0;
 					width: 0;
 					height: 1px;
-					background-color: $text-color;
+					background-color: $color-text;
 					transition: width 0.4s ease;
 				}
 			}
 
-			// Animation en cascade quand le menu s'ouvre
 			.nav__list--menu.is-open & {
-				// Animation de la bordure
 				&::after {
 					width: 100%;
 				}
 
-				// Animation du lien
 				.nav__link {
 					opacity: 1;
 					transform: translateX(0);
 				}
 
-				// Délais en cascade
 				&:nth-child(1) {
-					&::after {
-						transition-delay: 0.2s;
-					}
-					.nav__link {
-						transition-delay: 0.2s;
-					}
+					&::after { transition-delay: 0.2s; }
+					.nav__link { transition-delay: 0.2s; }
 				}
 				&:nth-child(2) {
-					&::after {
-						transition-delay: 0.4s;
-					}
-					.nav__link {
-						transition-delay: 0.4s;
-					}
+					&::after { transition-delay: 0.4s; }
+					.nav__link { transition-delay: 0.4s; }
 				}
 				&:nth-child(3) {
-					&::after {
-						transition-delay: 0.6s;
-					}
-					.nav__link {
-						transition-delay: 0.6s;
-					}
+					&::after { transition-delay: 0.6s; }
+					.nav__link { transition-delay: 0.6s; }
 				}
 				&:nth-child(4) {
-					&::after {
-						transition-delay: 0.8s;
-					}
-					.nav__link {
-						transition-delay: 0.8s;
-					}
+					&::after { transition-delay: 0.8s; }
+					.nav__link { transition-delay: 0.8s; }
 				}
 			}
 		}
 	}
 
 	&__link {
-		color: $text-color;
+		color: $color-text;
 		text-decoration: none;
 		font-family: $font-family-heading;
 		font-weight: 500;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		font-size: 14px;
-		transition: opacity 0.2s ease;
 
-		&:hover {
-			opacity: 0.6;
-		}
+		// Pas de &:hover { opacity } ici — géré par le glitch
 
 		@media (max-width: 767px) {
 			.nav__list--menu & {
@@ -183,7 +168,7 @@
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 14px;
-	color: $text-color;
+	color: $color-text;
 
 	@media (max-width: 767px) {
 		display: block;

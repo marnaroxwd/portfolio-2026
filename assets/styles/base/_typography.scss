@@ -56,7 +56,13 @@ $font-weight-semibold: 600;
 
 $font-size-base: 20px;
 $font-size-h2: 51px;
+$font-size-big-links: 86px;
 
+$font-size-mobile: 18px;
+$font-size-mobile-h2: 32px;
+$font-size-mobile-big-links: 38px;
+
+$line-height-title: 1;
 $line-height-base: 1.4;
 
 $color-text: #2D2D2A;
@@ -71,12 +77,15 @@ body {
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $color-text;
+  @media(max-width: 767px){
+    font-size: $font-size-mobile;
+  }
 }
 
 /* ============================= */
 /*           TITRES              */
 /* ============================= */
-
+p
 h1,
 h2,
 h3,
@@ -85,8 +94,12 @@ h5,
 h6 {
   font-family: $font-family-heading;
   font-weight: $font-weight-medium;
+  line-height: $line-height-title;
 }
 
 h2 {
   font-size: $font-size-h2;
+  @media (max-width: 768px) {
+    font-size: $font-size-mobile-h2;
+  }
 }

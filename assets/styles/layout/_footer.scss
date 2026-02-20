@@ -1,146 +1,155 @@
+// ================================================
+// footer.scss
+// ================================================
+
 .footer {
-    background-color: $text-color;
-    color: $background-color;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+	background-color: $color-text;
+	color: $color-background;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        border-right: solid 1px $text-color;
+	&__list {
+		display: flex;
+		flex-direction: column;
 
-        &-first {
-            grid-column: 1/5;
-            border-right: solid 1px $background-color;
-            padding-top: 24px;
-            padding-left: 20px;
-        }
+		&-first {
+			grid-column: 1/5;
+			border-right: solid 1px $color-background;
+			padding-top: 24px;
+			padding-left: 20px;
+			padding-bottom: 40px;
+		}
 
-        &-third {
-            padding-top: 24px;
-            padding-left: 20px;
-            grid-column: 9/13;
-            border-left: solid 1px $background-color;
-        }
-    }
+		&-third {
+			padding-top: 24px;
+			padding-left: 20px;
+			padding-bottom: 40px;
+			grid-column: 9/13;
+			border-left: solid 1px $color-background;
+		}
+	}
 
-    &__group-list {
-        padding-top: 24px;
-        padding-left: 20px;
-        grid-column: 5/9;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        padding-bottom: 40px;
-    }
+	&__group-list {
+		padding-top: 24px;
+		padding-left: 20px;
+		grid-column: 5/9;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		padding-bottom: 40px;
+	}
 
-    &__el {
-        margin-top: 4px;
+	&__el {
+		margin-top: 4px;
+        max-width: fit-content;
+		text-transform: uppercase;
+		font-family: $font-family-base;
+		&:first-child {
+			margin-top: 0;
+		}
 
-        &:first-child {
-            margin-top: 0;
-        }
+		&:nth-child(2) {
+			margin-top: 0;
+		}
 
-        &:nth-child(2) {
-            margin-top: 0;
-        }
+		&-title {
+			font-family: $font-family-heading;
+			font-weight: $font-weight-medium;
+			margin-bottom: 12px;
+			text-transform: uppercase;
+		}
+	}
 
-        &-title {
-            font-family: $font-family-heading;
-            font-weight: $font-weight-medium;
-            margin-bottom: 12px;
-            text-transform: uppercase;
-        }
-    }
+	// Lien footer de base (non-glitch)
+	&__link {
+		color: $color-background;
+		text-decoration: none;
+	}
 
-    &__link {
-        color: $background-color;
-    }
+	// TABLET (1024px et moins)
+	@media (max-width: 1024px) {
+		&__list-first {
+			grid-column: 1/4;
+			padding-left: 16px;
+		}
 
-    // TABLET (1024px et moins)
-    @media (max-width: 1024px) {
-        &__list-first {
-            grid-column: 1/4;
-            padding-left: 16px;
-        }
+		&__group-list {
+			grid-column: 4/9;
+			padding-left: 16px;
+			gap: 20px;
+		}
 
-        &__group-list {
-            grid-column: 4/9;
-            padding-left: 16px;
-            gap: 20px;
-        }
+		&__list-third {
+			grid-column: 9/13;
+			padding-left: 16px;
+		}
+	}
 
-        &__list-third {
-            grid-column: 9/13;
-            padding-left: 16px;
-        }
-    }
+	// TABLET SMALL (768px et moins)
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
 
-    // TABLET SMALL (768px et moins)
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+		&__list {
+			border-right: none;
+			border-bottom: solid 1px $color-background;
 
-        &__list {
-            border-right: none;
-            border-bottom: solid 1px $background-color;
+			&-first {
+				grid-column: 1;
+				grid-row: 1;
+				border-right: none;
+				border-bottom: solid 1px $color-background;
+				padding: 24px 20px;
+			}
 
-            &-first {
-                grid-column: 1;
-                grid-row: 1;
-                border-right: none;
-                border-bottom: solid 1px $background-color;
-                padding: 24px 20px;
-            }
+			&-third {
+				grid-column: 1;
+				grid-row: 3;
+				border-left: none;
+				border-bottom: none;
+				padding: 24px 20px 40px 20px;
+			}
+		}
 
-            &-third {
-                grid-column: 1;
-                grid-row: 3;
-                border-left: none;
-                border-bottom: none;
-                padding: 24px 20px 40px 20px;
-            }
-        }
+		&__group-list {
+			grid-column: 1;
+			grid-row: 2;
+			padding: 24px 20px;
+			gap: 24px;
+			border-bottom: solid 1px $color-background;
+		}
 
-        &__group-list {
-            grid-column: 1;
-            grid-row: 2;
-            padding: 24px 20px;
-            gap: 24px;
-            border-bottom: solid 1px $background-color;
-        }
+		&__el-title {
+			margin-bottom: 8px;
+		}
+	}
 
-        &__el-title {
-            margin-bottom: 8px;
-        }
-    }
+	// MOBILE (480px et moins)
+	@media (max-width: 480px) {
+		&__list {
+			&-first,
+			&-third {
+				padding: 20px 16px;
+			}
+		}
 
-    // MOBILE (480px et moins)
-    @media (max-width: 480px) {
-        &__list {
-            &-first,
-            &-third {
-                padding: 20px 16px;
-            }
-        }
+		&__group-list {
+			padding: 20px 16px;
+			gap: 20px;
+		}
 
-        &__group-list {
-            padding: 20px 16px;
-            gap: 20px;
-        }
+		&__el {
+			margin-top: 3px;
+			font-size: 0.9rem;
 
-        &__el {
-            margin-top: 3px;
-            font-size: 0.9rem;
+			&-title {
+				font-size: 1rem;
+				margin-bottom: 8px;
+			}
+		}
 
-            &-title {
-                font-size: 1rem;
-                margin-bottom: 8px;
-            }
-        }
-
-        &__link {
-            font-size: 0.9rem;
-        }
-    }
+		&__link {
+			font-size: 0.9rem;
+		}
+	}
 }

@@ -1,6 +1,7 @@
 .accueil {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 20px;
 	grid-row-gap: 0px;
 	border-bottom: solid 1px $color-text;
 
@@ -26,7 +27,6 @@
 	&__big-title {
 		font-family: $font-family-heading;
 		grid-column: 2/12;
-		font-size: 158px;
 		border-left: solid 1px $color-text;
 		border-right: solid 1px $color-text;
 		display: flex;
@@ -38,7 +38,7 @@
 		@media (max-width: 767px) {
 			grid-column: 1/6;
 			font-size: 80px;
-			padding: 24px 16px 32px 16px;
+			padding: 16px 20px;
 			border-left: none;
 			border-right: none;
 		}
@@ -62,6 +62,7 @@
 			grid-row: 2;
 			grid-column: 1/6;
 			border-bottom: solid 1px $color-text;
+			font-size: $font-size-mobile-h2;
 		}
 	}
 
@@ -153,7 +154,7 @@
 	margin-bottom: 20px;
 
 	@media (max-width: 767px) {
-		font-size: 18px;
+		font-size: 20px;
 		margin-bottom: 16px;
 	}
 
@@ -162,11 +163,3 @@
 	}
 }
 
-.visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	white-space: nowrap;
-}

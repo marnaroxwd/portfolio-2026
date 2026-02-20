@@ -12,101 +12,173 @@
 	<body>
 		<header>
 			<nav class="nav">
-	<ul class="nav__list-container">
-		<li>
-			<ul class="nav__list nav__list--logo">
-				<li class="nav__el">
-					<a class="nav__link" href="#accueil"> MB. </a>
-				</li>
-			</ul>
-		</li>
+				<ul class="nav__list-container">
+					<li>
+						<ul class="nav__list nav__list--logo">
+							<li class="nav__el">
+								<a class="nav__link" href="#accueil">MB.</a>
+							</li>
+						</ul>
+					</li>
 
-		<li>
-			<ul class="nav__list nav__list--menu">
-				<li class="nav__el">
-					<a class="nav__link" href="#about">À propos</a>
-				</li>
-				<li class="nav__el">
-					<a class="nav__link" href="#projects">Projets</a>
-				</li>
-				<li class="nav__el">
-					<a class="nav__link" href="#photographie">Photographie</a>
-				</li>
-				<li class="nav__el">
-					<a class="nav__link" href="#contact">Contact</a>
-				</li>
-			</ul>
-		</li>
-		<li class="nav__burger-li">
+					<li>
+						<ul class="nav__list nav__list--menu">
+							<li class="nav__el">
+								<a
+									class="nav__link glitch-link"
+									data-glitch-text="À propos"
+									href="#about"
+								>
+									<span class="glitch-link__inner">À propos</span>
+								</a>
+							</li>
+							<li class="nav__el">
+								<a
+									class="nav__link glitch-link"
+									data-glitch-text="Projets"
+									href="#projects"
+								>
+									<span class="glitch-link__inner">Projets</span>
+								</a>
+							</li>
+							<li class="nav__el">
+								<a
+									class="nav__link glitch-link"
+									data-glitch-text="Photographie"
+									href="#photographie"
+								>
+									<span class="glitch-link__inner">Photographie</span>
+								</a>
+							</li>
+							<li class="nav__el">
+								<a
+									class="nav__link glitch-link"
+									data-glitch-text="Contact"
+									href="#contact"
+								>
+									<span class="glitch-link__inner">Contact</span>
+								</a>
+							</li>
+						</ul>
+					</li>
 
-			<button class="burger" aria-label="Menu" aria-expanded="false">
-				menu
-			</button>
-		</li>
-	</ul>
-</nav>
+					<li class="nav__burger-li">
+						<button class="burger" aria-label="Menu" aria-expanded="false">
+							menu
+						</button>
+					</li>
+				</ul>
+			</nav>
 		</header>
+
 		<main>
 			<section id="accueil" class="accueil">
 				<div class="accueil__title_container">
 					<h1 class="accueil__big-title">
-						<img src="assets/images/MAXIME_BALDAN.svg" alt="">
+						<img src="assets/images/MAXIME_BALDAN.svg" alt="" />
 						<span class="visually-hidden">Maxime Baldan</span>
 					</h1>
 				</div>
 				<h2 class="subtitle accueil__subtitle">Accueil</h2>
 				<div class="accueil__description">
 					<p class="medium">
-						Web développeur et designer, j’aime être créatif et trouver du sens
+						Web développeur et designer, j'aime être créatif et trouver du sens
 						à chaque projet que je fais.
 					</p>
 					<p>
-						J’aime profiter de chaque réalisation pour me tester, expérimenter
+						J'aime profiter de chaque réalisation pour me tester, expérimenter
 						et repousser mes limites, afin de créer des interfaces qui racontent
 						une histoire et marquent les utilisateurs.
 					</p>
 				</div>
 				<div class="accueil__img"></div>
 			</section>
-			<!-- <section id="projects" class="projects">
+
+			<section id="projects" class="projects">
 				<h2 class="subtitle projects__subtitle">Projets</h2>
 				<ul class="projects__list">
 					<li class="projects__el">
 						<a class="projects__link" href="">
 							<ul class="link__list">
-								<li class="link__el projects__titre">La buche</li>
-								<li class="link__el">Web app</li>
-								<li class="link__el">Concept, design & développement</li>
-								<li class="link__el">2026</li>
-								<li class="link__el">Consulter</li>
+								<li class="link__el projects__titre" data-text="La Buche">
+									La Buche
+								</li>
+								<ul class="link__list-information">
+									<li class="link__el projects__type" data-text="Web app">
+										Web app
+									</li>
+									<li
+										class="link__el projects__description"
+										data-text="Concept, design & développement"
+									>
+										Concept, design & développement
+									</li>
+									<li class="link__el projects__year" data-text="2026">2026</li>
+									<li class="link__el projects__cta">
+										<span class="visually-hidden" data-text="Consulter"
+											>Consulter</span
+										>
+									</li>
+								</ul>
 							</ul>
 						</a>
 					</li>
 					<li class="projects__el">
 						<a class="projects__link" href="">
 							<ul class="link__list">
-								<li class="link__el projects__titre">Checkpoint</li>
-								<li class="link__el">Web app</li>
-								<li class="link__el">Concept, design & développement</li>
-								<li class="link__el">2025</li>
-								<li class="link__el">Consulter</li>
+								<li class="link__el projects__titre" data-text="Checkpoint">
+									Checkpoint
+								</li>
+								<ul class="link__list-information">
+									<li class="link__el projects__type" data-text="Web app">
+										Web app
+									</li>
+									<li
+										class="link__el projects__description"
+										data-text="Concept, design & développement"
+									>
+										Concept, design & développement
+									</li>
+									<li class="link__el projects__year" data-text="2025">2025</li>
+									<li class="link__el projects__cta">
+										<span class="visually-hidden" data-text="Consulter"
+											>Consulter</span
+										>
+									</li>
+								</ul>
 							</ul>
 						</a>
 					</li>
 					<li class="projects__el">
 						<a class="projects__link" href="">
 							<ul class="link__list">
-								<li class="link__el projects__titre">Music PLZ</li>
-								<li class="link__el">Site web</li>
-								<li class="link__el">Design & développement</li>
-								<li class="link__el">2025</li>
-								<li class="link__el">Consulter</li>
+								<li class="link__el projects__titre" data-text="Music PLZ">
+									Music PLZ
+								</li>
+								<ul class="link__list-information">
+									<li class="link__el projects__type" data-text="Site web">
+										Site web
+									</li>
+									<li
+										class="link__el projects__description"
+										data-text="Design & développement"
+									>
+										Design & développement
+									</li>
+									<li class="link__el projects__year" data-text="2025">2025</li>
+									<li class="link__el projects__cta">
+										<span class="visually-hidden" data-text="Consulter"
+											>Consulter</span
+										>
+									</li>
+								</ul>
 							</ul>
 						</a>
 					</li>
 				</ul>
 			</section>
-			<section class="photos">
+
+			<section id="photos" class="photos">
 				<h2 class="subtitle photos__subtitle">Photos</h2>
 				<div class="photos__grid">
 					<div class="photos__layout photos__top photos__first"></div>
@@ -116,8 +188,15 @@
 					<div class="photos__layout photos__bottom photos__fifth"></div>
 					<div class="photos__layout photos__bottom photos__sixth"></div>
 				</div>
-				<a class="body__link photos__link" href="">Voir la gallerie</a>
+				<a
+					data-hover="Voir la gallerie"
+					class="body__link photos__link"
+					href=""
+				>
+					<span>Voir la gallerie</span>
+				</a>
 			</section>
+
 			<section id="about" class="about">
 				<h2 class="subtitle about__subtitle">À propos</h2>
 				<div class="about__grid">
@@ -140,13 +219,14 @@
 					</div>
 				</div>
 			</section>
+
 			<section id="contact" class="contact">
 				<h2 class="subtitle contact__subtitle">Contact</h2>
-
 				<form class="contact__form" action="#" method="post">
 					<div class="form__name">
 						<label for="fullname">Nom complet :</label><br />
 						<input
+							class="form__input"
 							type="text"
 							id="fullname"
 							name="fullname"
@@ -154,18 +234,17 @@
 							required
 						/>
 					</div>
-
 					<div class="form__mail">
 						<label for="email">E-Mail :</label><br />
 						<input
+							class="form__input"
 							type="email"
 							id="email"
 							name="email"
 							placeholder="example@email.com"
 							required
-						/><br /><br />
+						/>
 					</div>
-
 					<div class="form__description">
 						<label for="description">Description de votre demande :</label
 						><br />
@@ -174,10 +253,19 @@
 							name="description"
 							rows="5"
 							required
-						></textarea
-						><br /><br />
-
-						<button type="submit">Envoyer</button>
+						></textarea>
+						<button class="btn" type="submit" data-value="Envoyer">
+							<span class="btn__inner">
+								<span class="btn__sizer">Envoyer</span>
+								<span class="btn__label">Envoyer</span>
+								<span class="slash">&nbsp;/&nbsp;</span>
+<span class="btn__icon">
+    <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.2332 16.6665H33.4374V32.8707M31.6041 18.4978L16.7166 33.3873" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
+    </svg>
+</span>
+							</span>
+						</button>
 					</div>
 				</form>
 				<ul class="contact__list">
@@ -215,15 +303,52 @@
 				</ul>
 			</section>
 		</main>
+
 		<footer class="footer">
 			<ul class="footer__list footer__list-first">
 				<li class="footer__el footer__el-title">Navigation</li>
-				<li class="footer__el">Accueil</li>
-				<li class="footer__el">Projets</li>
-				<li class="footer__el">Photos</li>
-				<li class="footer__el">À propos</li>
-				<li class="footer__el">Contact</li>
+				<li class="footer__el">
+					<a
+						class="footer__link glitch-link"
+						data-glitch-text="Accueil"
+						href="#accueil"
+						>Accueil</a
+					>
+				</li>
+				<li class="footer__el">
+					<a
+						class="footer__link glitch-link"
+						data-glitch-text="Projets"
+						href="#projects"
+						>Projets</a
+					>
+				</li>
+				<li class="footer__el">
+					<a
+						class="footer__link glitch-link"
+						data-glitch-text="Photos"
+						href="#photos"
+						>Photos</a
+					>
+				</li>
+				<li class="footer__el">
+					<a
+						class="footer__link glitch-link"
+						data-glitch-text="À propos"
+						href="#about"
+						>À propos</a
+					>
+				</li>
+				<li class="footer__el">
+					<a
+						class="footer__link glitch-link"
+						data-glitch-text="Contact"
+						href="#contact"
+						>Contact</a
+					>
+				</li>
 			</ul>
+
 			<div class="footer__group-list">
 				<ul class="footer__list">
 					<li class="footer__el footer__el-title">Services</li>
@@ -236,8 +361,14 @@
 					<li class="footer__el footer__el-title">Légal</li>
 					<li class="footer__el">Mentions légales</li>
 					<li class="footer__el">Politique de confidentialité</li>
-					<li>
-						<a class="footer__link" href="credits.html">Crédits/sources</a>
+					<li class="footer__el">
+						<a
+							class="footer__link glitch-link"
+							data-glitch-text="Crédits/sources"
+							href="credits.html"
+						>
+							<span class="glitch-link__inner">Crédits/sources</span>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -245,24 +376,34 @@
 			<ul class="footer__list footer__list-third">
 				<li class="footer__el footer__el-title">Réseaux</li>
 				<li class="footer__el">
-					<a class="footer__link" href="https://github.com/marnaroxwd"
-						>Github</a
+					<a
+						class="footer__link glitch-link"
+						data-glitch-text="Github"
+						href="https://github.com/marnaroxwd"
 					>
+						<span class="glitch-link__inner">GITHUB</span>
+					</a>
 				</li>
 				<li class="footer__el">
 					<a
-						class="footer__link"
+						class="footer__link glitch-link"
+						data-glitch-text="Linkedin"
 						href="https://www.linkedin.com/in/maxime-baldan"
-						>Linkedin</a
 					>
+						<span class="glitch-link__inner">LINKEDIN</span>
+					</a>
 				</li>
-				<li class="footer__el">Instagram</li>
+				<li class="footer__el">TÉLÉCHARGER LE CV</li>
 				<li class="footer__el">
-					<a class="footer__link" href="mailto:maxime.baldan@outlook.be"
-						>maxime.baldan@outlook.be</a
+					<a
+						class="footer__link glitch-link"
+						data-glitch-text="maxime.baldan@outlook.be"
+						href="mailto:maxime.baldan@outlook.be"
 					>
+						<span class="glitch-link__inner">MAXIME.BALDAN@OUTLOOK.BE</span>
+					</a>
 				</li>
 			</ul>
-		</footer> -->
+		</footer>
 	</body>
 </html>
