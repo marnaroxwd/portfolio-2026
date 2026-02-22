@@ -18,4 +18,4 @@
 
 - Voir si je peux pas mettre les images directement dans l'html sans enculé le layout
 
-
+- refaire l'animation de voir gallerie

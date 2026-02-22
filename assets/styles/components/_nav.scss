@@ -86,7 +86,7 @@
 
 	&__el {
 		list-style: none;
-
+		display: flex;
 		@media (max-width: 767px) {
 			.nav__list--menu & {
 				position: relative;
@@ -142,8 +142,13 @@
 		letter-spacing: 1px;
 		font-size: 14px;
 
-		// Pas de &:hover { opacity } ici — géré par le glitch
+		// Desktop — glitch géré par glitch.scss
+		@media (min-width: 768px) {
+			position: relative;
+			overflow: hidden;
+		}
 
+		// Mobile — style natif pour le menu slide-in
 		@media (max-width: 767px) {
 			.nav__list--menu & {
 				display: block;
@@ -152,6 +157,7 @@
 				opacity: 0;
 				transform: translateX(30px);
 				transition: opacity 0.4s ease, transform 0.4s ease;
+				overflow: visible;
 			}
 		}
 	}

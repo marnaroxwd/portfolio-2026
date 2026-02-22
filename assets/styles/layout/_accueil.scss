@@ -98,14 +98,14 @@
 	&__img {
 		background-image: url('../images/accueil_mb.jpg');
 		background-size: cover;
-		background-position: bottom center;
+		background-position:  center;
 		background-repeat: no-repeat;
 		grid-column: 7/12;
 		grid-row: 2;
 		border-left: solid 1px $color-text;
 		border-right: solid 1px $color-text;
 		max-width: 100%;
-		min-height: 400px;
+		min-height: 530px;
 
 		// Tablette : photo au-dessus du texte
 		@media (min-width: 768px) and (max-width: 1023px) {
