@@ -94,7 +94,6 @@
 
 		&__list {
 			border-right: none;
-			border-bottom: solid 1px $color-background;
 
 			&-first {
 				grid-column: 1;
@@ -142,16 +141,16 @@
 
 		&__el {
 			margin-top: 3px;
-			font-size: 0.9rem;
+			font-size: 11px;
 
 			&-title {
-				font-size: 1rem;
+				font-size: 14px;
 				margin-bottom: 8px;
 			}
 		}
 
 		&__link {
-			font-size: 0.9rem;
+			font-size: 11px;
 		}
 	}
 }
